@@ -129,8 +129,15 @@ li.inicio-selecionado a{
   margin: 0 5px;
 }
 
+.tipos {
+  width: 90%;
+  max-width: 720px;
+  min-width: 320px;
+}
+
 .tipos nav ul {
   display: flex;
+  justify-content: space-around;
 }
 
 .tipos nav ul li {
