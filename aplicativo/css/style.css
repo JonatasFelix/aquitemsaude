@@ -18,7 +18,80 @@ body {
   background: rgba(221,239,265,0.6);
 }
 
-.tudo {
+@media screen and (max-width: 720px) {
+
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+
+  header nav .nav-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .mobile .perto-de-voce {
+    background: none;
+  }
+
+  .mobile .pesquisar, .mobile .perto-de-voce {
+    width: 100%;
+    max-width: none;
+  }
+
+  .mobile .perto-de-voce iframe {
+    width: 100%;
+    max-width: 1024px;
+    height: 320px;
+  }
+
+
+  footer {
+    background: rgb(200 224 245 / 80%); 
+  }
+
+  footer .infos-rodape {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  footer .infos-rodape .sobre p {
+    max-width: 380px;
+  }
+
+  footer .infos-rodape .contatos ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .copyright {
+    display: flex;
+    justify-content: center;
+    background: lightblue;
+  }
+
+  .mobile .topo .infos .menu {
+    display: none;
+  }
+
+  .mobile .menu-inferior {
+    display: none;
+  }
+  
+}
+
+
+
+.mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +140,7 @@ i#btn-menu-principal {
 
 i.fas.fa-times {
   position: absolute;
-  top: 5px;
+  top: 14px;
   right: 7px;
   padding: 10px;
   font-size: 29px;
@@ -307,4 +380,18 @@ h1 {
 
 select {
   display: block;
+}
+
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+      left: 0;
+      -webkit-transform: none;
+      transform: none;
+  }
+
+  .hide-on-med-and-down {
+    display: block !important;
+}
+
 }
