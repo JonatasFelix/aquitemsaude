@@ -15,12 +15,16 @@ ul, li {
 }
 
 body {
-  background: rgba(221,239,265,0.6);
+  background: #DDEFFF;
 }
 
 @media screen and (max-width: 720px) {
 
   header {
+    display: none;
+  }
+
+  .banner {
     display: none;
   }
 
@@ -32,18 +36,78 @@ body {
 
 @media screen and (min-width: 720px) {
 
+  header nav {
+    background-color: rgb(200 224 245 / 80%);
+  }
+
+  header nav ul li a {
+    color: black;
+  }
+
   header nav .nav-wrapper {
     max-width: 1024px;
     margin: 0 auto;
   }
 
+  header nav .nav-wrapper .brand-logo img {
+    width: 85px;
+  }
+
+  section.banner {
+    width: 100%;
+    height: 350px;
+    background: url(../img/banner.svg)center no-repeat;
+    background-size: cover;
+    /* background-position: 50% 32%; */
+  }
+
+  .banner .container {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .banner img {
+    width: 248px;
+  }
+  .banner .banner-text {
+    max-width: 415px;
+  }
+
+  .banner .banner-text h1 {
+    color: #0d0d0d ;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .mobile .pesquisar .titulo h1, .mobile .perto-de-voce .titulo h1, .mobile .infos .titulo h1 {
+    font-size: 26px;
+  }
+
+  .mobile .pesquisar .titulo, .mobile .perto-de-voce .titulo, .mobile .infos .titulo {
+    margin-bottom: 30px;
+  }
+
+  .mobile .topo {
+    background: none;
+    padding: 40px 0;
+  }
+
+  .mobile .pesquisar {
+    margin-bottom: 0;
+  }
+
   .mobile .perto-de-voce {
     background: none;
+    margin-bottom: 0;
   }
 
   .mobile .pesquisar, .mobile .perto-de-voce {
     width: 100%;
     max-width: none;
+    padding: 50px 0;
   }
 
   .mobile .perto-de-voce iframe {
@@ -51,6 +115,7 @@ body {
     max-width: 1024px;
     height: 320px;
   }
+
 
 
   footer {
@@ -197,11 +262,6 @@ li.inicio-selecionado a{
   margin: 0 auto;
 }
 
-.infos .titulo h1 {
-  font-size: 18px;
-  margin: 0 5px;
-}
-
 .tipos {
   width: 90%;
   max-width: 720px;
@@ -251,7 +311,7 @@ li.inicio-selecionado a{
   justify-content: center;
 }
 
-.pesquisar .titulo h1, .perto-de-voce .titulo h1 {
+.pesquisar .titulo h1, .perto-de-voce .titulo h1, .infos .titulo h1 {
   font-size: 18px;
   margin: 0 5px;
 }
@@ -265,6 +325,7 @@ li.inicio-selecionado a{
   color: #14142B;
   font-size: 16px;
   width: 70%;
+  max-width: 1024px;
   min-width: 250px;
   height: 55px;
   border-radius: 15px;
