@@ -19,6 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../img/favicon.png" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="./css/materialize.css">
@@ -31,11 +32,11 @@
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img src="./img/logo-topo.png" alt=""></a>
+        <a href="#" class="brand-logo"><img src="./img/logo-topo.png" alt="Aqui tem Saúde"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
+          <li><a href="./home.html">Inicio</a></li>
+          <li><a href="#pesquisar">Pesquisar</a></li>
+          <li><a href="#!">Historico</a></li>
         </ul>
       </div>
     </nav>
@@ -128,29 +129,39 @@
 
     </section>
 
-    <section class="pesquisar">
+    <section class="pesquisar" id="pesquisar">
+      <div class="pesquisar-container">
 
-      <div class="titulo">
-        <img src="../img/icones/logo-esquerdo.svg" alt="">
-        <h1>Pesquisar</h1>
-        <img src="../img/icones/logo-direito.svg" alt="">
+        <div class="pesquisar-desktop">
+          <img src="./img/pesquisa mobile.png" alt="">
+          <p>Use os <span>campos ao lado </span>para encontrar a unidade de saúde 
+            <span>mais proxima de você</span>.</p>
+        </div>
+
+        <div class="pesquisar-mobile">
+          <div class="titulo">
+            <img src="../img/icones/logo-esquerdo.svg" alt="">
+            <h1>Pesquisar</h1>
+            <img src="../img/icones/logo-direito.svg" alt="">
+          </div>
+      
+          <div class="formulario">
+            <form action="">
+              <select name="" id="">
+                <option value="">Selecionar Cidade</option>
+              </select>
+              <select name="" id="">
+                <option value="">Selecionar Bairro</option>
+              </select>
+            </form>
+          </div>
+      
+          <div class="button">
+            <a href="#">Procurar</a>
+          </div>
+        </div>
+
       </div>
-
-      <div class="formulario">
-        <form action="">
-          <select name="" id="">
-            <option value="">Selecionar Cidade</option>
-          </select>
-          <select name="" id="">
-            <option value="">Selecionar Bairro</option>
-          </select>
-        </form>
-      </div>
-
-      <div class="button">
-        <a href="#">Procurar</a>
-      </div>
-
     </section>
 
     <section class="perto-de-voce">
@@ -208,8 +219,8 @@
           <h2>Contatos</h2>
           <ul>
             <li><a href="#!"><i class="fab fa-instagram"></i>Instagram</a></li>
-            <a href="#!"><i class="fab fa-linkedin"></i>Linkedin</a>
-            <a href=""><i class="far fa-envelope"></i>contato@aquitemsaude.com.br</a>
+            <li><a href="#!"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+            <li><a href=""><i class="far fa-envelope"></i>contato@aquitemsaude.com.br</a></li>
           </ul>
         </div>
       </div>

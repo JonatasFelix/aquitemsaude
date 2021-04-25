@@ -1,11 +1,15 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body, h1 {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  font-size: 2.56rem;
 }
 
 ul, li {
@@ -26,6 +30,10 @@ body {
 
   .banner {
     display: none;
+  }
+
+  .pesquisar-desktop {
+   display: none;
   }
 
   footer {
@@ -51,6 +59,7 @@ body {
 
   header nav .nav-wrapper .brand-logo img {
     width: 85px;
+    margin: 0 15px;
   }
 
   section.banner {
@@ -95,8 +104,41 @@ body {
     padding: 40px 0;
   }
 
+  .mobile .pesquisar-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .pesquisar-desktop {
+    width: 340px;
+  }
+
+  .pesquisar-desktop img {
+    width: 90%;
+  }
+
+  .pesquisar-desktop p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .pesquisar-desktop p span {
+    color: blue;
+  }
+
+  .mobile .pesquisar-mobile {
+    width: 340px;
+  }
+
   .mobile .pesquisar {
     margin-bottom: 0;
+  }
+
+  .mobile #pesquisar .formulario form select {
+    width: 100%;
   }
 
   .mobile .perto-de-voce {
@@ -136,6 +178,14 @@ body {
   footer .infos-rodape .contatos ul {
     display: flex;
     flex-direction: column;
+  }
+
+  footer .infos-rodape .contatos ul li{
+    padding: 3px;
+  }
+
+  footer .infos-rodape .contatos ul li i{
+    padding-right: 10px;
   }
 
   footer .copyright {
