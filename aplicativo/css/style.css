@@ -46,6 +46,8 @@ body {
 
   header nav {
     background-color: rgb(200 224 245 / 80%);
+    height: 75px;
+    padding: 5px 0;
   }
 
   header nav ul li a {
@@ -158,8 +160,6 @@ body {
     height: 320px;
   }
 
-
-
   footer {
     background: rgb(200 224 245 / 80%); 
   }
@@ -203,8 +203,6 @@ body {
   }
   
 }
-
-
 
 .mobile {
   display: flex;
@@ -464,6 +462,36 @@ li.inicio-selecionado a{
   text-align: center;
   padding-top: 5px;
   margin: 0;
+}
+
+@media screen and (max-width: 340px) {
+  .tipos nav ul li {
+    margin: 15px 3px 0;
+  }
+
+  h1, .infos .titulo h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .tipos {
+    min-width: auto;
+  }
+
+  .pesquisar .formulario form select {
+    min-width: 220px;
+  }
+
+  .perto-de-voce iframe {
+    min-width: 220px;
+    min-height: 160px;
+  }
+
+  .pesquisar, .perto-de-voce {
+    min-width: auto;
+
+  }
+
 }
 
 
