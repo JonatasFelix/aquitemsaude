@@ -1,13 +1,5 @@
-@media screen and (min-width: 720px) {
-  section.banner {
-    display: flex;
-    align-items: center;
-    height: 100px;
-  }
-
-  .banner .banner-text h1 {
-    margin-bottom: auto;
-  }
+.voltar {
+  display: none;
 }
 
 .tipos nav ul li a #ativo {
@@ -84,7 +76,6 @@ iframe {
 }
 
 
-
 .clinicas::-webkit-scrollbar-track {
   width: 0;
 }
@@ -97,8 +88,29 @@ iframe {
   width: 0;
 }
 
+@media screen and (min-width: 720px) {
+  section.banner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-position-y: center;
+  }
+
+  .banner .banner-text h1 {
+    margin-bottom: auto;
+  }
+}
+
 
 @media screen and (max-width: 720px) {
+
+  .voltar {
+    display: block;
+  }
+
+  .voltar i {
+    font-size: 25px;
+  }
 
   iframe {
     visibility: hidden;

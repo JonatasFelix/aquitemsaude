@@ -69,7 +69,7 @@ body {
     height: 350px;
     background: url(../img/banner.svg)center no-repeat;
     background-size: cover;
-    /* background-position: 50% 32%; */
+    background-position-y: 1px;
   }
 
   .banner .container {
@@ -97,7 +97,7 @@ body {
     font-size: 26px;
   }
 
-  .mobile .pesquisar .titulo, .mobile .perto-de-voce .titulo, .mobile .infos .titulo {
+  .mobile .pesquisar .titulo, .mobile .perto-de-voce .titulo, .mobile .infos {
     margin-bottom: 30px;
   }
 
